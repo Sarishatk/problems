@@ -1,4 +1,4 @@
-def alternative_string(word1: str, word2: str) -> str:
+def alternative_string(word1: str, word2: str) :
     i, j = 0, 0
     result = []
     while i < len(word1) and j < len(word2):
