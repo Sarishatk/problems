@@ -14,4 +14,4 @@ def alternative_string(word1: str, word2: str) :
 
 word1 = "abcs"
 word2 = "dcfg"
-print(alternative_string(word1, word))
+print(alternative_string(word1, word2))
