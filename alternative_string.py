@@ -7,8 +7,7 @@ def alternative_string(word1: str, word2: str) :
         i += 1
         j += 1
 
-    result.extend(word1[i:])
-    result.extend(word2[j:])
+   
 
     return "".join(result)
 
