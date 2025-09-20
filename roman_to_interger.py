@@ -1,5 +1,5 @@
-def roman_to_int(s: str) -> int:
-    # Roman numeral values
+def roman_to_int(s:str)->int:
+
     roman_map = {
         'I': 1,
         'V': 5,
@@ -9,23 +9,25 @@ def roman_to_int(s: str) -> int:
         'D': 500,
         'M': 1000
     }
-    
+
     total = 0
+
     prev_value = 0
 
-  
+    for char in reversed(s):
 
-        # If smaller value before larger value, subtract it
+        value = roman_map[char]
+
         if value < prev_value:
-            total -= value
-        else:
-            total += value
 
-        prev_value = value
+            total-=value
+
+        else:
+
+            total+=value
+
+            prev_value = value
 
     return total
 
-
-print(roman_to_int("III"))      # 3
-print(roman_to_int("LVIII"))    # 58
-print(roman_to_int("MCMXCIV"))  # 1994
+print(roman_to_int("IMD"))
