@@ -13,9 +13,7 @@ def roman_to_int(s: str) -> int:
     total = 0
     prev_value = 0
 
-    # Traverse from right to left
-    for char in reversed(s):
-        value = roman_map[char]
+  
 
         # If smaller value before larger value, subtract it
         if value < prev_value:
