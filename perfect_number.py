@@ -1,12 +1,15 @@
-num = int(input("Enter a positive integer"))
-n = num
-digit_sum = 0
-while num!=0:
-    digit = num %10
-    digit_sum+=digit
-    num = num//10
+# check whether the number is perfect or not
 
-if n%digit_sum==0:
-    print("harshad number")
+
+num = int(input("Enter a number: "))
+
+sum = 0
+
+for i in range(1, num):
+    if num % i == 0:
+        sum += i
+
+if num == sum:
+    print("Number is Perfect")
 else:
-    print("not harshad number")
+    print("Number is Not Perfect")
