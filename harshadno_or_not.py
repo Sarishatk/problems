@@ -10,3 +10,7 @@ if n%digit_sum==0:
     print("harshad number")
 else:
     print("not harshad number")
+
+
+
+

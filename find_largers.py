@@ -1,4 +1,6 @@
 # [2,1,5,4,3,6,7,8,2,12] find the third largest and third smallest number in the list
+
+
 num = [2,1,5,4,3,6,7,8,2,12]
 
 set_num = sorted(set(num))
