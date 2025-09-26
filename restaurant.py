@@ -17,52 +17,40 @@
 
 # wlcome to Grocery billing system
 
+
+# Menu (dictionary of products with prices)
 menu = {
-    "mandhi":540,
-    "rice":60,
-    "Dosa":15,
-    "putt":30
+    "Rice": 50,
+    "Sugar": 40,
+    "Milk": 30,
+    "Bread": 25,
+    "Eggs": 6,
+    "Oil": 120
 }
 
+print("🛒 Welcome to Smart Grocery Billing System")
 
-print("Hello sir Welcome to Grocery")
+# Get customer details
+name = input("Enter your name: ")
+phone = input("Enter your phone number: ")
+print(f"\nHello {name}, let's start shopping!\n")
 
-name = input("enter your name :")
-
-phone_no = input("enter your phone number :")
-
-print(f"Hello {name}, welcome to our shop")
-
-card = []
+cart = []   # list to store items
 
 while True:
+    print("\nAvailable Items:")
+    for item, price in menu.items():
+        print(f"{item} - ₹{price}")
 
-    print("available product in Grocery ")
-
-    for item,price in menu.items():
-     
-     print(f"{item}-{price}")
+    choice = input("\nEnter the item you want to buy: ")
     
-    product = input("enter product : ")
+    if choice in menu:
+        qty = int(input(f"Enter quantity of {choice}: "))
+        cart.append((choice, qty, menu[choice] * qty))
+        print(f"✅ {choice} added to cart.")
+    else:
+        print("❌ Item not found in menu!")
 
-    if product not in item.capitalize():
-       
-       print("Item not available")
-
-    qty = int(input("enter quantity of the product"))
-
-    card.append((product,qty,menu[product] * qty))
-
-    more = print("do you want to add more product (yes/no)?")
-
-    if more !=" yes" :
-       
-       break
-
-
-    
-
-    
-       
-
-
+    repeat = input("Do you want to order more? (yes/no): ").lower()
+    if repeat != "yes":
+        break
