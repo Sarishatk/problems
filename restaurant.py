@@ -15,3 +15,54 @@
 # Saving the bill into a text file with customer details >>>> generate a bill in txt file showing (price name ,total)
 
 
+# wlcome to Grocery billing system
+
+menu = {
+    "mandhi":540,
+    "rice":60,
+    "Dosa":15,
+    "putt":30
+}
+
+
+print("Hello sir Welcome to Grocery")
+
+name = input("enter your name :")
+
+phone_no = input("enter your phone number :")
+
+print(f"Hello {name}, welcome to our shop")
+
+card = []
+
+while True:
+
+    print("available product in Grocery ")
+
+    for item,price in menu.items():
+     
+     print(f"{item}-{price}")
+    
+    product = input("enter product : ")
+
+    if product not in item.capitalize():
+       
+       print("Item not available")
+
+    qty = int(input("enter quantity of the product"))
+
+    card.append((product,qty,menu[product] * qty))
+
+    more = print("do you want to add more product (yes/no)?")
+
+    if more !=" yes" :
+       
+       break
+
+
+    
+
+    
+       
+
+
