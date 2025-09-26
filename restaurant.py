@@ -54,3 +54,5 @@ while True:
     repeat = input("Do you want to order more? (yes/no): ").lower()
     if repeat != "yes":
         break
+
+    # generate bill
