@@ -73,8 +73,30 @@ while True:
 
     # generate bill
 print("\n---------- 🧾 BILL ----------")
+
 total = sum(item[2] for item in cart)
+
 for item in cart:
+
     print(f"{item[0]} x{item[1]} = ₹{item[2]}")
 
 print(f"\nTotal Amount = ₹{total}")
+
+# apply coupon
+
+discount = 0
+
+coupon = ("Enter coupon  code (save10/save20) or press enter to skip").lower()
+
+if coupon == "save10":
+
+    discount = total * 0.10
+
+elif coupon == "save20" and total > 1500:
+
+    discount = total * 0.20
+else:
+
+    if coupon:
+        
+        print("⚠️ Invalid or not applicable coupon!")
