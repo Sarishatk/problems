@@ -55,13 +55,9 @@ while True:
     choice = input("\nEnter the item you want to buy: ")
     
     if choice in menu:
-
         qty = int(input(f"Enter quantity of {choice}: "))
-
         cart.append((choice, qty, menu[choice] * qty))
-
         print(f"✅ {choice} added to cart.")
-
     else:
 
         print("❌ Item not found in menu!")
