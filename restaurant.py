@@ -59,7 +59,7 @@ while True:
         qty = int(input(f"Enter quantity of {choice}: "))
 
         cart.append((choice, qty, menu[choice] * qty))
-        
+
         print(f"✅ {choice} added to cart.")
     else:
 
@@ -72,11 +72,9 @@ while True:
         break
 
     # generate bill
-    
-    total = sum(item[2] for item in cart)
-    
-    for item in cart:
+print("\n---------- 🧾 BILL ----------")
+total = sum(item[2] for item in cart)
+for item in cart:
+    print(f"{item[0]} x{item[1]} = ₹{item[2]}")
 
-        print(f"{item[0]} x{item[1]} = ₹{item[2]}")
-
-        print(f"Total amount = ₹{total}")
+print(f"\nTotal Amount = ₹{total}")
