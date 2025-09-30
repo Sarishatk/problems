@@ -5,4 +5,27 @@ and ask them to have another guess.
 if they enter the same value as compnum,display
 """
 
+copnum = 50
+
+while True:
+
+ num1 = int(input("Enter a number : "))
+
+ if num1 == copnum:
+
+    print("your guess is correct🎉")
+
+    break
+
+ elif num1<copnum:
+
+    print("enter higher value ")
+
+ elif num1>copnum:
+
+    print("enter lower value ")
+
+
+
+
 
