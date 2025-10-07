@@ -25,6 +25,8 @@ class Employee:
 employee_instance = Employee()
 
 employee_instance.set_employee(100,"ram","cs",23444)
+
+employee_instance.display_employee()
     
 
 
