@@ -18,3 +18,9 @@ class Employee:
 
         self.salary = salary
 
+    def display_employee(self):
+
+        print(self.id,self.name,self.department,self.salary)
+    
+
+
