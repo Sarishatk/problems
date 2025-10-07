@@ -21,6 +21,10 @@ class Employee:
     def display_employee(self):
 
         print(self.id,self.name,self.department,self.salary)
+
+employee_instance = Employee()
+
+employee_instance.set_employee(100,"ram","cs",23444)
     
 
 
