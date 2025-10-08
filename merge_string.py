@@ -18,4 +18,8 @@ class solution:
 
             s.append[word1[a]]
 
+            a+= 1
+
+            word = 2
+
 
