@@ -28,6 +28,10 @@ class solution:
 
             b += 1
 
-            
+            word = 1
+
+        
+
+
 
 
