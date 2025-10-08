@@ -11,3 +11,7 @@ class solution:
         s = []
 
         word = 1
+
+        if a < A and b < B:
+
+            
