@@ -9,3 +9,5 @@ class solution:
         a,b = 0,0
 
         s = []
+
+        word = 1
