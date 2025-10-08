@@ -16,10 +16,18 @@ class solution:
 
             word = 1
 
-            s.append[word1[a]]
+            s.append(word1[a])
 
             a+= 1
 
             word = 2
+
+        else:
+
+            s.append(word[a])
+
+            b += 1
+
+            
 
 
