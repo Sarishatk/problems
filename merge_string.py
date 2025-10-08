@@ -10,8 +10,12 @@ class solution:
 
         s = []
 
-        word = 1
+     
 
-        if a < A and b < B:
+        while a < A and b < B:
 
-            
+            word = 1
+
+            s.append[word1[a]]
+
+
